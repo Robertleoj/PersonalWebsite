@@ -13,7 +13,7 @@
         <div class="flex items-center px-10 order-2">
             <div class="text-pink-200">
                 <h3 class="text-3xl hover:translate-x-1 transition-all">Hi, I'm</h3>
-                <h1 class="text-5xl hover:translate-x-1 transition-all text-pink-50 ">Róbert Leó Þormar Jónsson.</h1>
+                <h1 class="text-5xl hover:translate-x-1 transition-all text-pink-50 py-4">Róbert Leó Þormar Jónsson.</h1>
                 <h2 class="text-3xl hover:translate-x-1 transition-all">I'm a full-stack developer.</h2>
                 <h2 class="text-3xl hover:translate-x-1 transition-all">And I love what I do.</h2>
             </div>
