@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+    .navbar-element  {
+        @apply flex relative items-center justify-center px-2 text-fg1;
+    }
+}
