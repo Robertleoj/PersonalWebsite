@@ -10,8 +10,10 @@
 </script>
 
 
-<div class="flex">
+<header>
 <NavBar/>
+</header>
+<main class="relative top-16">
 <Main/>
-</div>
+</main>
 
