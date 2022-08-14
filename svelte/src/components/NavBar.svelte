@@ -40,7 +40,7 @@
         </div>
     </a>
 
-    <div class="flex flex-row mr-8">
+    <div class="flex flex-row md:mr-8 mr-2">
 
         <a href="https://www.linkedin.com/in/r%C3%B3bert-le%C3%B3-0a01a219b/" target="_blank"
             class="mx-2 w-8 h-8"
