@@ -11,7 +11,7 @@
 
 <div class="
     grid lg:grid-cols-3 md:grid-cols-1 md:w-full md:m-10 sm:m-3
-    max-w-screen-xl
+    max-w-screen-2xl
     -translate-y-44
 ">
 
