@@ -13,7 +13,7 @@
 <header>
 <NavBar/>
 </header>
-<main class="relative top-16">
+<main class="relative top-16 overflow-x-hidden">
 <Main/>
 </main>
 
