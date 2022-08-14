@@ -35,19 +35,19 @@
     </div>
 
     <div class="
-        text-2xl font-bold text-pink-50 my-10
+        text-2xl font-bold text-pink-50 mt-7
     ">   
         <slot name="title"/>
     </div>
 
     <div class="
-        text-xl text-pink-50 my-10
+        text-xl text-pink-50 mt-10
     ">
         <slot name="summary"/>
     </div>
 
     <div class="
-        text-pink-300 text-2xl mt-10 mb-4
+        text-pink-300 text-2xl mt-14 
     ">
         <slot name="list1"/>
     </div>
@@ -55,13 +55,13 @@
     <div class="
         text-pink-50
         text-xl 
-        mb-10
+        mt-5
     ">
         <slot name="list1-vals"/>
     </div>
 
     <div class="
-        text-pink-300 text-2xl mt-10 mb-4
+        text-pink-300 text-2xl mt-14 mb-4
     ">
         <slot name="list2"/>
     </div>
