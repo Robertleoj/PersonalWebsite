@@ -4,16 +4,16 @@
     import Github from '@icons/github.svelte';
 </script>
 
-<div class="fixed top-0 left-0 w-screen h-16 m-0
+<div class="fixed top-0 left-0 w-screen h-28 m-0
             bg-gray-900 text-white
             flex flex-row justify-between items-center">
     
 
     <!-- Main logo -->
-    <a href='/' class="group ml-2 hover:p-1 transition-all">
-        <div class="flex flex-row">
+    <a href='/' class="group hover:p-1 transition-all ml-8">
+        <div class="flex flex-row items-center">
             <div class="flex relative items-center justify-center 
-                h-16 w-16 px-2 py-2
+                h-24 w-24 p-3 m-3
                 text-primary">
                 <svg
                     viewBox="0 0 128 128"
@@ -31,8 +31,8 @@
                 </svg>
             </div>
             <div class="
-                h-16 flex items-center 
-                text-2xl text-pink-50
+                h-24 flex items-center 
+                text-3xl text-pink-50
                 group-hover:text-pink-200 transition-all
             ">
                 <p>Róbert Leó Jónsson</p>
@@ -40,10 +40,10 @@
         </div>
     </a>
 
-    <div class="flex flex-row mr-4">
+    <div class="flex flex-row mr-8">
 
         <a href="https://www.linkedin.com/in/r%C3%B3bert-le%C3%B3-0a01a219b/"
-            class="mx-2 w-8 h-8"
+            class="mx-2 w-12 h-12"
         >
             <svg 
                 class="text-pink-50 hover:text-pink-200 hover:-translate-y-1 transition-all"
@@ -54,7 +54,7 @@
             </svg>
         </a>
         <a href="https://github.com/Robertleoj"
-            class="w-8 h-8"
+            class="w-12 h-12"
         >
             <svg 
                 class="text-pink-50 hover:text-pink-200 hover:-translate-y-1 transition-all" 

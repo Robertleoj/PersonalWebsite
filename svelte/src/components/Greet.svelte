@@ -1,30 +1,24 @@
-<div class="bg-gray-700 w-screen h-min relative">
 
-    <div id="greet-id" class="flex flex-row justify-center px-10 flex-wrap py-20">
+<div class="flex justify-center w-screen bg-gray-100 pb-60">
+    <div
+        class="
+            flex flex-col items-center justify-evenly px-20
+            max-w-screen-4xl
+        "
+    >
+        <h3 class="text-5xl font-bold leading-relaxed text-center py-10">
+            Nice to meet you.
+        </h3>
 
-        <div class="px-20 shrink-0 order-1"
+        <p 
+            class="text-4xl leading-relaxed text-center"
         >
-            <img src="/profile.jpg" alt="me" class="
-                rounded-full w-100 h-100 aspect-square
-                border-4 border-pink-400 p-4 hover:p-0 transition-all
-            "/>
-        </div>
-
-        <div class="flex items-center px-10 order-2">
-            <div class="text-pink-200">
-                <h3 class="text-3xl hover:translate-x-1 transition-all">Hi, I'm</h3>
-                <h1 class="text-5xl hover:translate-x-1 transition-all text-pink-50 py-4">Róbert Leó Þormar Jónsson.</h1>
-                <h2 class="text-3xl hover:translate-x-1 transition-all">I'm a full-stack developer.</h2>
-                <h2 class="text-3xl hover:translate-x-1 transition-all">And I love what I do.</h2>
-            </div>
-        </div>
-
+            Since I started programming, I've been obsessed. I've worked all around the web development stack, and beyond it. Now I'm focusing on finishing my Bachelor's degree in Discrete mathematics and Computer Science.
+            <br><br>
+            I'm a very fast learner, and constantly trying to learn more about my craft, improving my skills every day. There's nothing I enjoy more.
+        </p>
     </div>
+
 </div>
 
-<style>
-#greet-id {
-    max-width: 2500px;
-}
-</style>
 
