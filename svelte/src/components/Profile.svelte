@@ -2,13 +2,13 @@
 
     <div class="
             flex flex-row justify-center flex-wrap 
-            px-10 py-16
+            md:px-10 sm:px-0 py-16
             max-w-screen-2xl
         ">
-        <div class="px-10 shrink-0 order-1"
+        <div class="px-10 order-1"
         >
             <img src="/profile.jpg" alt="me" class="
-                rounded-full w-96 h-96 aspect-square
+                rounded-full max-w-96 max-h-96 aspect-square
                 border-4 border-pink-400 p-4 hover:p-0 transition-all
             "/>
         </div>
