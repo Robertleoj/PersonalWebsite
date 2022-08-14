@@ -3,14 +3,16 @@
 	import {onMount} from 'svelte';
 	import Home from '../components/HomePage/Home.svelte';
 
-	import init, {greet} from 'svelte-test';
-
+	import {init as testInit} from '../wasm/svelte_test.js';
 	
-	onMount(async () => {
-		init().then(()=>greet("Hello"));
-	})
+
+	const loadWasm = (async () => {
+		await testInit();
+	})();
 
 
 </script>
 
-<Home/>
+{#await loadWasm then}
+	<Home/>
+{/await}
