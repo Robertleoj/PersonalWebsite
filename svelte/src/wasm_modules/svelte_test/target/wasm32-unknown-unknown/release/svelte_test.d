@@ -1,1 +1,0 @@
-/home/king_rob/Desktop/Projects/PersonalWebsite/svelte/src/wasm_modules/svelte_test/target/wasm32-unknown-unknown/release/svelte_test.wasm: /home/king_rob/Desktop/Projects/PersonalWebsite/svelte/src/wasm_modules/svelte_test/src/lib.rs

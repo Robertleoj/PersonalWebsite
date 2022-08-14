@@ -14,17 +14,10 @@ const config = {
 			'@icons': path.resolve('./src/icons'),
 			'@routes': path.resolve('./src/routes'),
 			'@src': path.resolve('./src/'),
+			'@wasm':path.resolve('./src/wasm/'),
+			'@tictac': path.resolve('./src/components/UltimateTicTac')
 		}
 	},
-	optimizeDeps: {
-		include: ['../rust/svelte_test']
-	},
-
-	// build: {
-	// 	commonjsOptions: {
-	// 		include: [/svelte_test/, /node_modules/]
-	// 	}
-	// }
 };
 
 export default config;
