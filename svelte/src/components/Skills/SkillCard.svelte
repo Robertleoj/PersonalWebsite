@@ -14,8 +14,11 @@
 ">
     <div
         class="
-            bg-pink-400
+            border-pink-400 border-4
+            group hover:border-0 hover:bg-pink-400
             flex items-center justify-center
+            hover:-translate-y-3
+            transition-all
             rounded-full
             w-20 h-20
         "
@@ -26,7 +29,8 @@
             stroke="currentColor" 
             stroke-width="2" stroke-linecap="round" stroke-linejoin="round" 
             class="
-                text-gray-900
+                group-hover:text-gray-900 transition-all
+                text-pink-400
                 h-12 w-12
             "
         >
@@ -72,10 +76,6 @@
     ">
         <slot name="list2-vals"/>
     </div>
-
-
-
-
 </div>
 </div>
 
