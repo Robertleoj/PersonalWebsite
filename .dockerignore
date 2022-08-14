@@ -1,0 +1,4 @@
+./svelte/node_modules
+./svelte/.vercel
+./svelte/src/wasm_modules/ultimate_tic_tac/target
+# ./svelte/tsconfig.json

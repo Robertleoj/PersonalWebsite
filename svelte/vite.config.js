@@ -6,15 +6,18 @@ import topLevelAwait from 'vite-plugin-top-level-await';
 
 /** @type {import('vite').UserConfig} */
 const config = {
-	// plugins: [sveltekit(), wasmPack('../rust/svelte_test')],
-	plugins: [sveltekit(), wasm(), topLevelAwait()],
+	plugins: [
+		wasm(), 
+		topLevelAwait(),
+		sveltekit(),
+	],
 	resolve: {
 		alias: {
 			'@components': path.resolve('./src/components'),
 			'@icons': path.resolve('./src/icons'),
 			'@routes': path.resolve('./src/routes'),
-			'@src': path.resolve('./src/'),
-			'@wasm':path.resolve('./src/wasm/'),
+			'@src': path.resolve('./src'),
+			'@wasm':path.resolve('./src/wasm'),
 			'@tictac': path.resolve('./src/components/UltimateTicTac')
 		}
 	},
