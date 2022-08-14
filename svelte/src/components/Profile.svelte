@@ -8,7 +8,7 @@
         <div class="px-10 order-1"
         >
             <img src="/profile.jpg" alt="me" class="
-                rounded-full w-80 h-80 aspect-square
+                rounded-full max-w-80 max-h-80 aspect-square
                 border-4 border-pink-400 p-4 hover:p-0 transition-all
             "/>
         </div>
@@ -21,7 +21,6 @@
                 <h2 class="text-2xl hover:translate-x-1 transition-all">And I love what I do.</h2>
             </div>
         </div>
-
     </div>
 </div>
 
