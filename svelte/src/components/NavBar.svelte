@@ -42,7 +42,7 @@
 
     <div class="flex flex-row mr-8">
 
-        <a href="https://www.linkedin.com/in/r%C3%B3bert-le%C3%B3-0a01a219b/"
+        <a href="https://www.linkedin.com/in/r%C3%B3bert-le%C3%B3-0a01a219b/" target="_blank"
             class="mx-2 w-12 h-12"
         >
             <svg 
@@ -56,7 +56,7 @@
                 <Linkedin/>
             </svg>
         </a>
-        <a href="https://github.com/Robertleoj"
+        <a href="https://github.com/Robertleoj" target="_blank"
             class="w-12 h-12"
         >
             <svg 
