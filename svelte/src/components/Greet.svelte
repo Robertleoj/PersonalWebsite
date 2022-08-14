@@ -1,8 +1,8 @@
 <div class="bg-gray-700 w-screen h-min relative">
 
-    <div class="flex flex-row justify-center px-10 flex-wrap py-20">
+    <div id="greet-id" class="flex flex-row justify-center px-10 flex-wrap py-20">
 
-        <div class="px-20 shrink-0 order-1 "
+        <div class="px-20 shrink-0 order-1"
         >
             <img src="/profile.jpg" alt="me" class="
                 rounded-full w-100 h-100 aspect-square
@@ -23,6 +23,8 @@
 </div>
 
 <style>
-
+#greet-id {
+    max-width: 2500px;
+}
 </style>
 
