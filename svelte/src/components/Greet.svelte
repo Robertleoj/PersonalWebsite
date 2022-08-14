@@ -1,5 +1,5 @@
 
-<div class="flex justify-center w-screen bg-gray-100 pb-60">
+<div class="flex justify-center w-screen bg-gray-100 pb-72">
     <div
         class="
             flex flex-col items-center justify-evenly px-20
