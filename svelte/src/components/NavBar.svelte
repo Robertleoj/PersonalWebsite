@@ -4,7 +4,7 @@
     import Github from '@icons/github.svelte';
 </script>
 
-<div class="fixed top-0 left-0 w-screen h-28 m-0
+<div class="fixed top-0 left-0 w-screen h-28 m-0 z-50
             bg-gray-900 text-white
             flex flex-row justify-between items-center">
     
