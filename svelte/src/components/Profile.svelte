@@ -3,7 +3,7 @@
     <div class="
             flex flex-row justify-center flex-wrap 
             md:px-10 sm:px-0 py-14
-            max-w-screen-xl
+            max-w-screen-2xl
         ">
         <div class="px-10 order-1"
         >
