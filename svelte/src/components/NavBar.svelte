@@ -4,16 +4,16 @@
     import Github from '@icons/github.svelte';
 </script>
 
-<div class="fixed top-0 left-0 w-screen h-28 m-0 z-50
+<div class="fixed top-0 left-0 w-screen h-16 m-0 z-50
             bg-gray-900 text-white
             flex flex-row justify-between items-center">
     
 
     <!-- Main logo -->
-    <a href='/' class="group hover:p-1 transition-all ml-8">
+    <a href='/' class="group hover:p-1 transition-all">
         <div class="flex flex-row items-center">
             <div class="flex relative items-center justify-center 
-                h-24 w-24 p-3 m-3
+                h-16 w-16 p-2
                 text-primary">
                 <svg
                     viewBox="0 0 128 128"
@@ -32,7 +32,7 @@
             </div>
             <div class="
                 h-24 flex items-center 
-                text-3xl text-pink-50
+                text-2xl text-pink-50
                 group-hover:text-pink-300 transition-all
             ">
                 <p>Róbert Leó Jónsson</p>
@@ -43,7 +43,7 @@
     <div class="flex flex-row mr-8">
 
         <a href="https://www.linkedin.com/in/r%C3%B3bert-le%C3%B3-0a01a219b/" target="_blank"
-            class="mx-2 w-12 h-12"
+            class="mx-2 w-9 h-9"
         >
             <svg 
                 class="
@@ -57,7 +57,7 @@
             </svg>
         </a>
         <a href="https://github.com/Robertleoj" target="_blank"
-            class="w-12 h-12"
+            class="w-9 h-9"
         >
             <svg 
                 class="

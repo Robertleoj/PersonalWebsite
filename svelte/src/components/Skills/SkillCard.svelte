@@ -1,5 +1,5 @@
 <div class="
-    m-4
+    m-2
 ">
 <div class="
     flex flex-col 
@@ -12,14 +12,12 @@
     m-auto
     h-full
 ">
-
-
     <div
         class="
             bg-pink-300
             flex items-center justify-center
             rounded-full
-            w-28 h-28
+            w-24 h-24
         "
     >
         <svg 
@@ -29,7 +27,7 @@
             stroke-width="2" stroke-linecap="round" stroke-linejoin="round" 
             class="
                 text-gray-900
-                h-20 w-20
+                h-16 w-16
             "
         >
             <slot name="icon"/>
@@ -37,19 +35,19 @@
     </div>
 
     <div class="
-        text-5xl font-bold text-pink-50 my-10
+        text-3xl font-bold text-pink-50 my-10
     ">   
         <slot name="title"/>
     </div>
 
     <div class="
-        text-3xl text-pink-50 my-10
+        text-2xl text-pink-50 my-10
     ">
         <slot name="summary"/>
     </div>
 
     <div class="
-        text-pink-300 text-4xl mt-10 mb-4
+        text-pink-300 text-3xl mt-10 mb-4
     ">
         <slot name="list1"/>
     </div>
@@ -63,7 +61,7 @@
     </div>
 
     <div class="
-        text-pink-300 text-4xl mt-10 mb-4
+        text-pink-300 text-3xl mt-10 mb-4
     ">
         <slot name="list2"/>
     </div>
