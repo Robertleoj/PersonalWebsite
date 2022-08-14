@@ -10,8 +10,8 @@
 <div class="flex justify-center w-screen">
 
 <div class="
-    grid xl:grid-cols-3 lg:grid-cols-1 lg:w-full md:w-full m-10
-    max-w-screen-2xl
+    grid md:grid-cols-3 sm:grid-cols-1 sm:w-full md:m-10 sm:m-3
+    max-w-screen-xl
     -translate-y-44
 ">
 

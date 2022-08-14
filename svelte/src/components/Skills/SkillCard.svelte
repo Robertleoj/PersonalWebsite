@@ -17,7 +17,7 @@
             bg-pink-300
             flex items-center justify-center
             rounded-full
-            w-24 h-24
+            w-20 h-20
         "
     >
         <svg 
@@ -27,7 +27,7 @@
             stroke-width="2" stroke-linecap="round" stroke-linejoin="round" 
             class="
                 text-gray-900
-                h-16 w-16
+                h-12 w-12
             "
         >
             <slot name="icon"/>
@@ -35,40 +35,40 @@
     </div>
 
     <div class="
-        text-3xl font-bold text-pink-50 my-10
+        text-2xl font-bold text-pink-50 my-10
     ">   
         <slot name="title"/>
     </div>
 
     <div class="
-        text-2xl text-pink-50 my-10
+        text-xl text-pink-50 my-10
     ">
         <slot name="summary"/>
     </div>
 
     <div class="
-        text-pink-300 text-3xl mt-10 mb-4
+        text-pink-300 text-2xl mt-10 mb-4
     ">
         <slot name="list1"/>
     </div>
 
     <div class="
         text-pink-50
-        text-2xl 
+        text-xl 
         mb-10
     ">
         <slot name="list1-vals"/>
     </div>
 
     <div class="
-        text-pink-300 text-3xl mt-10 mb-4
+        text-pink-300 text-2xl mt-10 mb-4
     ">
         <slot name="list2"/>
     </div>
 
     <div class="
         text-pink-50
-        text-2xl 
+        text-xl 
     ">
         <slot name="list2-vals"/>
     </div>

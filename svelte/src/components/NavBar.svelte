@@ -13,7 +13,7 @@
     <a href='/' class="group hover:p-1 transition-all">
         <div class="flex flex-row items-center">
             <div class="flex relative items-center justify-center 
-                h-16 w-16 p-2
+                h-16 w-16 p-3
                 text-primary">
                 <svg
                     viewBox="0 0 128 128"
@@ -32,7 +32,7 @@
             </div>
             <div class="
                 h-24 flex items-center 
-                text-2xl text-pink-50
+                text-xl text-pink-50
                 group-hover:text-pink-300 transition-all
             ">
                 <p>Róbert Leó Jónsson</p>
@@ -43,7 +43,7 @@
     <div class="flex flex-row mr-8">
 
         <a href="https://www.linkedin.com/in/r%C3%B3bert-le%C3%B3-0a01a219b/" target="_blank"
-            class="mx-2 w-9 h-9"
+            class="mx-2 w-8 h-8"
         >
             <svg 
                 class="
@@ -57,7 +57,7 @@
             </svg>
         </a>
         <a href="https://github.com/Robertleoj" target="_blank"
-            class="w-9 h-9"
+            class="w-8 h-8"
         >
             <svg 
                 class="
