@@ -3,7 +3,7 @@
 ">
 <div class="
     flex flex-col 
-    rounded-2xl border-4 border-pink-400
+    rounded-2xl border-2 border-pink-400
     text-center
     items-center
     p-14
@@ -14,7 +14,7 @@
 ">
     <div
         class="
-            bg-pink-300
+            bg-pink-400
             flex items-center justify-center
             rounded-full
             w-20 h-20
@@ -35,7 +35,7 @@
     </div>
 
     <div class="
-        text-2xl font-bold text-pink-50 mt-7
+        text-2xl font-extrabold text-pink-50 mt-7
     ">   
         <slot name="title"/>
     </div>
