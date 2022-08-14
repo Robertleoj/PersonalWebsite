@@ -20,7 +20,7 @@
                 >
                 <circle 
                     class="
-                        text-pink-50 group-hover:text-pink-200 transition-all
+                        text-pink-300 group-hover:text-pink-50 transition-all
                     "
                     cx="62.5" 
                     cy="62.5" 
@@ -33,7 +33,7 @@
             <div class="
                 h-24 flex items-center 
                 text-3xl text-pink-50
-                group-hover:text-pink-200 transition-all
+                group-hover:text-pink-300 transition-all
             ">
                 <p>Róbert Leó Jónsson</p>
             </div>
@@ -46,7 +46,10 @@
             class="mx-2 w-12 h-12"
         >
             <svg 
-                class="text-pink-50 hover:text-pink-200 hover:-translate-y-1 transition-all"
+                class="
+                    text-pink-50 hover:text-pink-300
+                    hover:-translate-y-1 transition-all
+                "
                 fill="currentColor" 
                 viewBox="0 0 30 30" 
             >
@@ -57,7 +60,10 @@
             class="w-12 h-12"
         >
             <svg 
-                class="text-pink-50 hover:text-pink-200 hover:-translate-y-1 transition-all" 
+                class="
+                    text-pink-50 hover:text-pink-300
+                    hover:-translate-y-1 transition-all
+                " 
                 fill="currentColor" 
                 viewBox="0 0 30 30" 
             > 
