@@ -13,7 +13,7 @@ const config = {
 	],
 	build: {
 		rollupOptions: {
-			external: ['./src/wasm/ultimate_tic_tac.ts']
+			external: ['wasm-ultimate-tic-tac']
 		}
 	},
 	resolve: {
