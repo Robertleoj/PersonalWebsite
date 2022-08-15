@@ -3277,7 +3277,7 @@ function exec(match, names, types, matchers) {
 	return params;
 }
 
-/* global "@sveltejs/adapter-node" */
+/* global "@sveltejs/adapter-vercel" */
 
 const DATA_SUFFIX = '/__data.json';
 
@@ -3386,7 +3386,7 @@ async function respond(request, options, state) {
 		get clientAddress() {
 			if (!state.getClientAddress) {
 				throw new Error(
-					`${"@sveltejs/adapter-node"} does not specify getClientAddress. Please raise an issue`
+					`${"@sveltejs/adapter-vercel"} does not specify getClientAddress. Please raise an issue`
 				);
 			}
 
