@@ -1,0 +1,77 @@
+{
+  "src/wasm_modules/ultimate_tic_tac/pkg/ultimate_tic_tac_bg.wasm": {
+    "file": "_app/immutable/assets/ultimate_tic_tac_bg-2e00979c.wasm",
+    "src": "src/wasm_modules/ultimate_tic_tac/pkg/ultimate_tic_tac_bg.wasm"
+  },
+  ".svelte-kit/runtime/client/start.js": {
+    "file": "_app/immutable/start-b03d09dd.js",
+    "src": ".svelte-kit/runtime/client/start.js",
+    "isEntry": true,
+    "imports": [
+      "_index-f96422a0.js"
+    ],
+    "dynamicImports": [
+      "src/routes/__layout.svelte",
+      ".svelte-kit/runtime/components/error.svelte",
+      "src/routes/index.svelte",
+      "src/routes/ultimate_tic_tac.svelte"
+    ]
+  },
+  "src/routes/__layout.svelte": {
+    "file": "_app/immutable/pages/__layout.svelte-3a2d7635.js",
+    "src": "src/routes/__layout.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-f96422a0.js"
+    ],
+    "css": [
+      "_app/immutable/assets/__layout-9d0d416a.css"
+    ]
+  },
+  ".svelte-kit/runtime/components/error.svelte": {
+    "file": "_app/immutable/error.svelte-b5f2125a.js",
+    "src": ".svelte-kit/runtime/components/error.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-f96422a0.js"
+    ]
+  },
+  "src/routes/index.svelte": {
+    "file": "_app/immutable/pages/index.svelte-9e1bf317.js",
+    "src": "src/routes/index.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-f96422a0.js",
+      "_Page-8e5bb3e1.js"
+    ]
+  },
+  "src/routes/ultimate_tic_tac.svelte": {
+    "file": "_app/immutable/pages/ultimate_tic_tac.svelte-308647b8.js",
+    "src": "src/routes/ultimate_tic_tac.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-f96422a0.js",
+      "_Page-8e5bb3e1.js"
+    ],
+    "assets": [
+      "_app/immutable/assets/ultimate_tic_tac_bg-2e00979c.wasm"
+    ]
+  },
+  "_index-f96422a0.js": {
+    "file": "_app/immutable/chunks/index-f96422a0.js"
+  },
+  "_Page-8e5bb3e1.js": {
+    "file": "_app/immutable/chunks/Page-8e5bb3e1.js",
+    "imports": [
+      "_index-f96422a0.js"
+    ]
+  },
+  "src/routes/__layout.css": {
+    "file": "_app/immutable/assets/__layout-9d0d416a.css",
+    "src": "src/routes/__layout.css"
+  }
+}

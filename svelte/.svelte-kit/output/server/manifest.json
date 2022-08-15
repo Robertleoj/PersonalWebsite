@@ -1,0 +1,64 @@
+{
+  ".svelte-kit/build/index.js": {
+    "file": "index.js",
+    "src": ".svelte-kit/build/index.js",
+    "isEntry": true,
+    "imports": [
+      "_index-6d4e55ab.js"
+    ],
+    "dynamicImports": [
+      ".svelte-kit/build/hooks.js"
+    ]
+  },
+  "src/routes/__layout.svelte": {
+    "file": "entries/pages/__layout.svelte.js",
+    "src": "src/routes/__layout.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-6d4e55ab.js"
+    ],
+    "css": [
+      "_app/immutable/assets/__layout-81b42012.css"
+    ]
+  },
+  ".svelte-kit/runtime/components/error.svelte": {
+    "file": "entries/fallbacks/error.svelte.js",
+    "src": ".svelte-kit/runtime/components/error.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-6d4e55ab.js"
+    ]
+  },
+  "src/routes/index.svelte": {
+    "file": "entries/pages/index.svelte.js",
+    "src": "src/routes/index.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-6d4e55ab.js",
+      "_Page-33e15f72.js"
+    ]
+  },
+  "src/routes/ultimate_tic_tac.svelte": {
+    "file": "entries/pages/ultimate_tic_tac.svelte.js",
+    "src": "src/routes/ultimate_tic_tac.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-6d4e55ab.js",
+      "_Page-33e15f72.js"
+    ]
+  },
+  "_index-6d4e55ab.js": {
+    "file": "_app/immutable/chunks/index-6d4e55ab.js"
+  },
+  "_Page-33e15f72.js": {
+    "file": "_app/immutable/chunks/Page-33e15f72.js",
+    "imports": [
+      "_index-6d4e55ab.js"
+    ]
+  },
+  ".svelte-kit/build/hooks.js": {
+    "file": "_app/immutable/chunks/hooks-bced8853.js",
+    "src": ".svelte-kit/build/hooks.js",
+    "isDynamicEntry": true
+  }
+}
