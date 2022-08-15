@@ -2,9 +2,12 @@
     
     import Page from '@components/Page.svelte';
     import ttWasm from '@wasm/ultimate_tic_tac';
+
+    let game = ttWasm.Game.new();
+
 </script>
 
 
 <Page>
-    <h1>{ttWasm.Player.PCross}</h1>
+    <pre>{game.str()}</pre>
 </Page>

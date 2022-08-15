@@ -1,21 +1,26 @@
 
-use super::CellState::{self, *};
-use super::BoardState::{self, *};
-use super::Player::{self, *};
-use wasm_bindgen::prelude::*;
+use super::{
+    CellState::{self, *},
+    BoardState::{self, *},
+    Player::{self, *},
+    BoardCoord,
+    CellCoord
+};
+
 
 use std::fmt;
 
 
+type BoardArr = [[[[CellState;3];3];3];3];
+type BoardWinsArr = [[BoardState;3];3];
 
-#[wasm_bindgen]
+
 pub struct State {
-    board: [[[[CellState;3];3];3];3],
-    board_wins: [[BoardState;3];3],
+    board: BoardArr,
+    board_wins: BoardWinsArr,
     turn: Player
 }
 
-#[wasm_bindgen]
 impl State {
     pub fn new() -> Self {
         let board = [[[[CEmpty;3];3];3];3];
@@ -24,20 +29,22 @@ impl State {
             board, board_wins, turn: PCross
         }
     }
-
-    pub fn get_idx(br: u8, bc: u8, sr: u8, sc: u8) -> u16 {
-        br as u16 * 27 
-            + bc as u16 * 9 
-            + sr as u16 * 3 
-            + sc as u16
+    pub fn get_cell_ptr(&self) ->  *const [[[CellState;3];3];3]{
+        self.board.as_ptr()
     }
-    
-    pub fn render(&self) -> String {
-        self.to_string()
+
+    pub fn get_board_ptr(&self) -> *const [BoardState;3] {
+        self.board_wins.as_ptr()
+    }
+
+    pub fn get_turn(&self) -> Player{
+        self.turn
     }
 }
 
+
 impl fmt::Display for State {
+
     fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
 
         let bar = "-".repeat(11);
@@ -71,8 +78,6 @@ impl fmt::Display for State {
             if br_idx != 2 {
                 write!(f, "{}\n", vec![bar.clone(), bar.clone(), bar.clone()].join("+"))?;
             }
-
-
         }
         Ok(())
     }
