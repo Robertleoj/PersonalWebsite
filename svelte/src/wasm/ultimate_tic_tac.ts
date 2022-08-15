@@ -1,7 +1,5 @@
-import init, {greet} from 'wasm-ultimate-tic-tac';
+import init, * as ttWasm from 'wasm-ultimate-tic-tac';
 
 export {init};
 
-export default {
-    greet
-}
+export default ttWasm;
