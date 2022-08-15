@@ -2,6 +2,12 @@
 /** @type {import('$env/static/private').LESSOPEN} */
 export const LESSOPEN = "| /usr/bin/lesspipe %s";
 
+/** @type {import('$env/static/private').NOW_BUILDER} */
+export const NOW_BUILDER = "1";
+
+/** @type {import('$env/static/private').VERCEL_GIT_REPO_OWNER} */
+export const VERCEL_GIT_REPO_OWNER = "";
+
 /** @type {import('$env/static/private').USER} */
 export const USER = "king_rob";
 
@@ -9,7 +15,7 @@ export const USER = "king_rob";
 export const LC_TIME = "is_IS.UTF-8";
 
 /** @type {import('$env/static/private').npm_config_user_agent} */
-export const npm_config_user_agent = "npm/8.17.0 node/v16.15.1 linux x64 workspaces/false";
+export const npm_config_user_agent = "npm/8.17.0 node/v16.15.1 linux x64 workspaces/false ci/now";
 
 /** @type {import('$env/static/private').STARSHIP_SHELL} */
 export const STARSHIP_SHELL = "bash";
@@ -36,7 +42,7 @@ export const HOME = "/home/king_rob";
 export const CHROME_DESKTOP = "code-url-handler.desktop";
 
 /** @type {import('$env/static/private').OLDPWD} */
-export const OLDPWD = "/home/king_rob/Desktop/Projects/PersonalWebsite";
+export const OLDPWD = "/home/king_rob/Desktop/Projects";
 
 /** @type {import('$env/static/private').TERM_PROGRAM_VERSION} */
 export const TERM_PROGRAM_VERSION = "1.70.0";
@@ -46,6 +52,9 @@ export const DESKTOP_SESSION = "ubuntu";
 
 /** @type {import('$env/static/private').npm_package_json} */
 export const npm_package_json = "/home/king_rob/Desktop/Projects/PersonalWebsite/svelte/package.json";
+
+/** @type {import('$env/static/private').VERCEL_ENV} */
+export const VERCEL_ENV = "preview";
 
 /** @type {import('$env/static/private').APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL} */
 export const APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = "true";
@@ -95,11 +104,17 @@ export const COLORTERM = "truecolor";
 /** @type {import('$env/static/private').GIO_LAUNCHED_DESKTOP_FILE_PID} */
 export const GIO_LAUNCHED_DESKTOP_FILE_PID = "5458";
 
+/** @type {import('$env/static/private').VERCEL_GIT_COMMIT_SHA} */
+export const VERCEL_GIT_COMMIT_SHA = "";
+
 /** @type {import('$env/static/private').COLOR} */
 export const COLOR = "1";
 
 /** @type {import('$env/static/private').NVM_DIR} */
 export const NVM_DIR = "/home/king_rob/.nvm";
+
+/** @type {import('$env/static/private').VERCEL_GIT_COMMIT_REF} */
+export const VERCEL_GIT_COMMIT_REF = "";
 
 /** @type {import('$env/static/private').npm_config_metrics_registry} */
 export const npm_config_metrics_registry = "https://registry.npmjs.org/";
@@ -110,11 +125,14 @@ export const MANDATORY_PATH = "/usr/share/gconf/ubuntu.mandatory.path";
 /** @type {import('$env/static/private').LOGNAME} */
 export const LOGNAME = "king_rob";
 
+/** @type {import('$env/static/private').VERCEL_GIT_PROVIDER} */
+export const VERCEL_GIT_PROVIDER = "";
+
 /** @type {import('$env/static/private').JOURNAL_STREAM} */
 export const JOURNAL_STREAM = "8:31092";
 
 /** @type {import('$env/static/private')._} */
-export const _ = "/usr/local/bin/npm";
+export const _ = "/usr/local/bin/vercel";
 
 /** @type {import('$env/static/private').npm_config_prefix} */
 export const npm_config_prefix = "/usr/local";
@@ -131,20 +149,29 @@ export const USERNAME = "king_rob";
 /** @type {import('$env/static/private').TERM} */
 export const TERM = "xterm-256color";
 
+/** @type {import('$env/static/private').VERCEL_URL} */
+export const VERCEL_URL = "";
+
 /** @type {import('$env/static/private').npm_config_cache} */
 export const npm_config_cache = "/home/king_rob/.npm";
 
 /** @type {import('$env/static/private').GNOME_DESKTOP_SESSION_ID} */
 export const GNOME_DESKTOP_SESSION_ID = "this-is-deprecated";
 
+/** @type {import('$env/static/private').VERCEL_GIT_COMMIT_AUTHOR_NAME} */
+export const VERCEL_GIT_COMMIT_AUTHOR_NAME = "";
+
 /** @type {import('$env/static/private').WINDOWPATH} */
 export const WINDOWPATH = "2";
+
+/** @type {import('$env/static/private').VERCEL_GIT_REPO_ID} */
+export const VERCEL_GIT_REPO_ID = "";
 
 /** @type {import('$env/static/private').npm_config_node_gyp} */
 export const npm_config_node_gyp = "/usr/local/lib/node_modules/npm/node_modules/node-gyp/bin/node-gyp.js";
 
 /** @type {import('$env/static/private').PATH} */
-export const PATH = "/home/king_rob/Desktop/Projects/PersonalWebsite/svelte/node_modules/.bin:/home/king_rob/Desktop/Projects/PersonalWebsite/node_modules/.bin:/home/king_rob/Desktop/Projects/node_modules/.bin:/home/king_rob/Desktop/node_modules/.bin:/home/king_rob/node_modules/.bin:/home/node_modules/.bin:/node_modules/.bin:/usr/local/lib/node_modules/npm/node_modules/@npmcli/run-script/lib/node-gyp-bin:/home/king_rob/.bun/bin:/home/king_rob/.local/bin:/home/king_rob/.bun/bin:/home/king_rob/.cargo/bin:/home/king_rob/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/king_rob/.local/bin:/home/king_rob/.local/bin:/home/king_rob/.local/bin:/home/king_rob/.local/bin";
+export const PATH = "/home/king_rob/Desktop/Projects/PersonalWebsite/svelte/node_modules/.bin:/home/king_rob/Desktop/Projects/PersonalWebsite/node_modules/.bin:/home/king_rob/Desktop/Projects/node_modules/.bin:/home/king_rob/Desktop/node_modules/.bin:/home/king_rob/node_modules/.bin:/home/node_modules/.bin:/node_modules/.bin:/usr/local/lib/node_modules/npm/node_modules/@npmcli/run-script/lib/node-gyp-bin:/node16/bin-npm7:/home/king_rob/Desktop/Projects/PersonalWebsite/svelte/node_modules/.bin:/node16/bin:/home/king_rob/.bun/bin:/home/king_rob/.local/bin:/home/king_rob/.bun/bin:/home/king_rob/.cargo/bin:/home/king_rob/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/king_rob/.local/bin:/home/king_rob/.local/bin:/home/king_rob/.local/bin:/home/king_rob/.local/bin";
 
 /** @type {import('$env/static/private').SESSION_MANAGER} */
 export const SESSION_MANAGER = "local/deep-af:@/tmp/.ICE-unix/2820,unix/deep-af:/tmp/.ICE-unix/2820";
@@ -203,6 +230,9 @@ export const VSCODE_GIT_IPC_HANDLE = "/run/user/1000/vscode-git-464f757e48.sock"
 /** @type {import('$env/static/private').TERM_PROGRAM} */
 export const TERM_PROGRAM = "vscode";
 
+/** @type {import('$env/static/private').__VERCEL_BUILD_RUNNING} */
+export const __VERCEL_BUILD_RUNNING = "1";
+
 /** @type {import('$env/static/private').npm_lifecycle_script} */
 export const npm_lifecycle_script = "vite build";
 
@@ -239,8 +269,14 @@ export const QT_ACCESSIBILITY = "1";
 /** @type {import('$env/static/private').GDMSESSION} */
 export const GDMSESSION = "ubuntu";
 
+/** @type {import('$env/static/private').VERCEL_ANALYTICS_ID} */
+export const VERCEL_ANALYTICS_ID = "gG3QpK6Bdgc6whPnMohgSBL0zGJ";
+
 /** @type {import('$env/static/private').LESSCLOSE} */
 export const LESSCLOSE = "/usr/bin/lesspipe %s %s";
+
+/** @type {import('$env/static/private').VERCEL_GIT_COMMIT_AUTHOR_LOGIN} */
+export const VERCEL_GIT_COMMIT_AUTHOR_LOGIN = "";
 
 /** @type {import('$env/static/private').LC_MEASUREMENT} */
 export const LC_MEASUREMENT = "is_IS.UTF-8";
@@ -250,6 +286,9 @@ export const GPG_AGENT_INFO = "/run/user/1000/gnupg/S.gpg-agent:0:1";
 
 /** @type {import('$env/static/private').LC_IDENTIFICATION} */
 export const LC_IDENTIFICATION = "is_IS.UTF-8";
+
+/** @type {import('$env/static/private').VERCEL} */
+export const VERCEL = "1";
 
 /** @type {import('$env/static/private').VSCODE_GIT_ASKPASS_EXTRA_ARGS} */
 export const VSCODE_GIT_ASKPASS_EXTRA_ARGS = "--ms-enable-electron-run-as-node";
@@ -279,7 +318,7 @@ export const XDG_DATA_DIRS = "/home/king_rob/.local/share/flatpak/exports/share:
 export const npm_config_global_prefix = "/usr/local";
 
 /** @type {import('$env/static/private').STARSHIP_SESSION_KEY} */
-export const STARSHIP_SESSION_KEY = "1795719942110101";
+export const STARSHIP_SESSION_KEY = "9313773396561140";
 
 /** @type {import('$env/static/private').LC_NUMERIC} */
 export const LC_NUMERIC = "is_IS.UTF-8";
@@ -290,11 +329,20 @@ export const npm_command = "run-script";
 /** @type {import('$env/static/private').LC_PAPER} */
 export const LC_PAPER = "is_IS.UTF-8";
 
+/** @type {import('$env/static/private').VERCEL_GIT_PREVIOUS_SHA} */
+export const VERCEL_GIT_PREVIOUS_SHA = "";
+
+/** @type {import('$env/static/private').VERCEL_GIT_COMMIT_MESSAGE} */
+export const VERCEL_GIT_COMMIT_MESSAGE = "";
+
 /** @type {import('$env/static/private').VTE_VERSION} */
 export const VTE_VERSION = "6800";
 
 /** @type {import('$env/static/private').EDITOR} */
 export const EDITOR = "vim";
+
+/** @type {import('$env/static/private').VERCEL_GIT_REPO_SLUG} */
+export const VERCEL_GIT_REPO_SLUG = "";
 
 /** @type {import('$env/static/private').INIT_CWD} */
 export const INIT_CWD = "/home/king_rob/Desktop/Projects/PersonalWebsite/svelte";

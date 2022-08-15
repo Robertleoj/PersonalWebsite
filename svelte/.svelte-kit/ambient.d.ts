@@ -7,6 +7,8 @@ declare module '$env/static/public' {
 
 declare module '$env/static/private' {
 	export const LESSOPEN: string;
+	export const NOW_BUILDER: string;
+	export const VERCEL_GIT_REPO_OWNER: string;
 	export const USER: string;
 	export const LC_TIME: string;
 	export const npm_config_user_agent: string;
@@ -22,6 +24,7 @@ declare module '$env/static/private' {
 	export const TERM_PROGRAM_VERSION: string;
 	export const DESKTOP_SESSION: string;
 	export const npm_package_json: string;
+	export const VERCEL_ENV: string;
 	export const APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL: string;
 	export const GNOME_SHELL_SESSION_MODE: string;
 	export const GTK_MODULES: string;
@@ -38,11 +41,14 @@ declare module '$env/static/private' {
 	export const npm_config_engine_strict: string;
 	export const COLORTERM: string;
 	export const GIO_LAUNCHED_DESKTOP_FILE_PID: string;
+	export const VERCEL_GIT_COMMIT_SHA: string;
 	export const COLOR: string;
 	export const NVM_DIR: string;
+	export const VERCEL_GIT_COMMIT_REF: string;
 	export const npm_config_metrics_registry: string;
 	export const MANDATORY_PATH: string;
 	export const LOGNAME: string;
+	export const VERCEL_GIT_PROVIDER: string;
 	export const JOURNAL_STREAM: string;
 	export const _: string;
 	export const npm_config_prefix: string;
@@ -50,9 +56,12 @@ declare module '$env/static/private' {
 	export const DEFAULTS_PATH: string;
 	export const USERNAME: string;
 	export const TERM: string;
+	export const VERCEL_URL: string;
 	export const npm_config_cache: string;
 	export const GNOME_DESKTOP_SESSION_ID: string;
+	export const VERCEL_GIT_COMMIT_AUTHOR_NAME: string;
 	export const WINDOWPATH: string;
+	export const VERCEL_GIT_REPO_ID: string;
 	export const npm_config_node_gyp: string;
 	export const PATH: string;
 	export const SESSION_MANAGER: string;
@@ -74,6 +83,7 @@ declare module '$env/static/private' {
 	export const LS_COLORS: string;
 	export const VSCODE_GIT_IPC_HANDLE: string;
 	export const TERM_PROGRAM: string;
+	export const __VERCEL_BUILD_RUNNING: string;
 	export const npm_lifecycle_script: string;
 	export const SSH_AGENT_LAUNCHER: string;
 	export const SSH_AUTH_SOCK: string;
@@ -86,10 +96,13 @@ declare module '$env/static/private' {
 	export const npm_lifecycle_event: string;
 	export const QT_ACCESSIBILITY: string;
 	export const GDMSESSION: string;
+	export const VERCEL_ANALYTICS_ID: string;
 	export const LESSCLOSE: string;
+	export const VERCEL_GIT_COMMIT_AUTHOR_LOGIN: string;
 	export const LC_MEASUREMENT: string;
 	export const GPG_AGENT_INFO: string;
 	export const LC_IDENTIFICATION: string;
+	export const VERCEL: string;
 	export const VSCODE_GIT_ASKPASS_EXTRA_ARGS: string;
 	export const QT_IM_MODULE: string;
 	export const npm_config_globalconfig: string;
@@ -103,8 +116,11 @@ declare module '$env/static/private' {
 	export const LC_NUMERIC: string;
 	export const npm_command: string;
 	export const LC_PAPER: string;
+	export const VERCEL_GIT_PREVIOUS_SHA: string;
+	export const VERCEL_GIT_COMMIT_MESSAGE: string;
 	export const VTE_VERSION: string;
 	export const EDITOR: string;
+	export const VERCEL_GIT_REPO_SLUG: string;
 	export const INIT_CWD: string;
 	export const NODE_ENV: string;
 }
