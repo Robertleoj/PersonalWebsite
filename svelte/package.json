@@ -16,25 +16,24 @@
 		"@playwright/test": "^1.22.2",
 		"@rollup/plugin-alias": "^3.1.9",
 		"@sveltejs/adapter-auto": "next",
+		"@sveltejs/adapter-node": "^1.0.0-next.86",
 		"@sveltejs/kit": "next",
 		"autoprefixer": "^10.4.8",
 		"postcss": "^8.4.16",
 		"prettier": "^2.6.2",
 		"prettier-plugin-svelte": "^2.7.0",
 		"svelte": "^3.44.0",
-
-		"svelte-test": "./src/wasm_modules/svelte_test/pkg",
-		"wasm-ultimate-tic-tac": "./src/wasm_modules/ultimate_tic_tac/pkg",
-
 		"svelte-check": "^2.7.1",
 		"svelte-preprocess": "^4.10.7",
+		"svelte-test": "./src/wasm_modules/svelte_test/pkg",
 		"tailwindcss": "^3.1.8",
 		"tslib": "^2.3.1",
 		"typescript": "^4.7.4",
 		"vite": "^3.0.7",
 		"vite-plugin-top-level-await": "^1.1.1",
 		"vite-plugin-wasm": "^2.1.0",
-		"vite-plugin-wasm-pack": "^0.1.12"
+		"vite-plugin-wasm-pack": "^0.1.12",
+		"wasm-ultimate-tic-tac": "./src/wasm_modules/ultimate_tic_tac/pkg"
 	},
 	"type": "module"
 }
