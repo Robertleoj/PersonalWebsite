@@ -11,6 +11,11 @@ const config = {
 		topLevelAwait(),
 		sveltekit(),
 	],
+	build: {
+		rollupOptions: {
+			external: ['./src/wasm/ultimate_tic_tac.ts']
+		}
+	},
 	resolve: {
 		alias: {
 			'@components': path.resolve('./src/components'),

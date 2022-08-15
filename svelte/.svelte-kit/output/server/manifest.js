@@ -3,7 +3,7 @@ export const manifest = {
 	assets: new Set(["favicon.png","me-zoomed.png","me.png","profile.jpg"]),
 	mimeTypes: {".png":"image/png",".jpg":"image/jpeg"},
 	_: {
-		entry: {"file":"_app/immutable/start-e7423e32.js","imports":["_app/immutable/start-e7423e32.js","_app/immutable/chunks/index-f96422a0.js"],"stylesheets":[]},
+		entry: {"file":"_app/immutable/start-ae9f15fe.js","imports":["_app/immutable/start-ae9f15fe.js","_app/immutable/chunks/index-f96422a0.js"],"stylesheets":[]},
 		nodes: [
 			() => import('./nodes/0.js'),
 			() => import('./nodes/1.js'),

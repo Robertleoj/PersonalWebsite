@@ -204,7 +204,7 @@ export const VSCODE_GIT_IPC_HANDLE = "/run/user/1000/vscode-git-464f757e48.sock"
 export const TERM_PROGRAM = "vscode";
 
 /** @type {import('$env/static/private').npm_lifecycle_script} */
-export const npm_lifecycle_script = "vite dev";
+export const npm_lifecycle_script = "vite build";
 
 /** @type {import('$env/static/private').SSH_AGENT_LAUNCHER} */
 export const SSH_AGENT_LAUNCHER = "gnome-keyring";
@@ -231,7 +231,7 @@ export const DISABLE_WAYLAND = "1";
 export const npm_package_version = "0.0.1";
 
 /** @type {import('$env/static/private').npm_lifecycle_event} */
-export const npm_lifecycle_event = "dev";
+export const npm_lifecycle_event = "build";
 
 /** @type {import('$env/static/private').QT_ACCESSIBILITY} */
 export const QT_ACCESSIBILITY = "1";
@@ -298,3 +298,6 @@ export const EDITOR = "vim";
 
 /** @type {import('$env/static/private').INIT_CWD} */
 export const INIT_CWD = "/home/king_rob/Desktop/Projects/PersonalWebsite/svelte";
+
+/** @type {import('$env/static/private').NODE_ENV} */
+export const NODE_ENV = "production";

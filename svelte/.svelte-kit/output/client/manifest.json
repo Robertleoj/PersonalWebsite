@@ -1,10 +1,10 @@
 {
   "src/wasm_modules/ultimate_tic_tac/pkg/ultimate_tic_tac_bg.wasm": {
-    "file": "_app/immutable/assets/ultimate_tic_tac_bg-2e00979c.wasm",
+    "file": "_app/immutable/assets/ultimate_tic_tac_bg-a870f560.wasm",
     "src": "src/wasm_modules/ultimate_tic_tac/pkg/ultimate_tic_tac_bg.wasm"
   },
   ".svelte-kit/runtime/client/start.js": {
-    "file": "_app/immutable/start-e7423e32.js",
+    "file": "_app/immutable/start-ae9f15fe.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
@@ -26,7 +26,7 @@
       "_index-f96422a0.js"
     ],
     "css": [
-      "_app/immutable/assets/__layout-9d0d416a.css"
+      "_app/immutable/assets/__layout-e7e15b04.css"
     ]
   },
   ".svelte-kit/runtime/components/error.svelte": {
@@ -49,7 +49,7 @@
     ]
   },
   "src/routes/ultimate_tic_tac.svelte": {
-    "file": "_app/immutable/pages/ultimate_tic_tac.svelte-308647b8.js",
+    "file": "_app/immutable/pages/ultimate_tic_tac.svelte-6f5da92c.js",
     "src": "src/routes/ultimate_tic_tac.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -58,7 +58,7 @@
       "_Page-8e5bb3e1.js"
     ],
     "assets": [
-      "_app/immutable/assets/ultimate_tic_tac_bg-2e00979c.wasm"
+      "_app/immutable/assets/ultimate_tic_tac_bg-a870f560.wasm"
     ]
   },
   "_index-f96422a0.js": {
@@ -71,7 +71,7 @@
     ]
   },
   "src/routes/__layout.css": {
-    "file": "_app/immutable/assets/__layout-9d0d416a.css",
+    "file": "_app/immutable/assets/__layout-e7e15b04.css",
     "src": "src/routes/__layout.css"
   }
 }
