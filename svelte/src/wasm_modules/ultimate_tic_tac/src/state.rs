@@ -25,9 +25,14 @@ impl State {
     pub fn new() -> Self {
         let board = [[[[CEmpty;3];3];3];3];
         let board_wins = [[BAvailable;3];3];
-        State {
+        let mut s = State {
             board, board_wins, turn: PCross
-        }
+        };
+
+        s.board[0][0][0][0] = CCircle;
+        s.board[0][0][0][1] = CCross;
+
+        s
     }
     pub fn get_cell_ptr(&self) ->  *const [[[CellState;3];3];3]{
         self.board.as_ptr()

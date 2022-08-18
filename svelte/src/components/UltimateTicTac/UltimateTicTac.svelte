@@ -1,13 +1,16 @@
 <script lang="ts">
     
     import Page from '@components/Page.svelte';
-    import ttWasm from '@wasm/ultimate_tic_tac';
+    import Board from './game/Board.svelte';
 
-    let game = ttWasm.Game.new();
+    import wasmModule from '@wasm/ultimate_tic_tac';
+    let game = wasmModule.module.Game.new();
 
 </script>
 
 
 <Page>
-    <pre>{game.str()}</pre>
+    <div class="w-screen h-full">
+        <Board game={game}></Board>
+    </div>
 </Page>
