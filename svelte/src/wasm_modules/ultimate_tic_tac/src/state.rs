@@ -32,6 +32,9 @@ impl State {
         s.board[0][0][0][0] = CCircle;
         s.board[0][0][0][1] = CCross;
 
+        s.board_wins[0][1] = BCircle;
+        s.board_wins[0][2] = BCross;
+
         s
     }
     pub fn get_cell_ptr(&self) ->  *const [[[CellState;3];3];3]{

@@ -60,10 +60,13 @@ pub struct CellCoord {
 
 
 #[wasm_bindgen]
+#[derive(Clone,Copy)]
 pub struct APIState {
     pub cell_ptr: CellPtr,
     pub board_ptr: BoardPtr,
-    pub force_board: Option<BoardCoord>,
+    pub has_force_board: bool,
+    pub force_board_row: u8,
+    pub force_board_col: u8,
     pub turn: Player,
     pub is_terminal: bool,
     pub winner: Option<Player>
@@ -86,7 +89,9 @@ impl Game {
         APIState { 
             cell_ptr: self.state.get_cell_ptr(), 
             board_ptr: self.state.get_board_ptr(), 
-            force_board: None, 
+            has_force_board: true,
+            force_board_row: 1,
+            force_board_col: 1,
             turn: self.state.get_turn(), 
             is_terminal: false, 
             winner: None 
