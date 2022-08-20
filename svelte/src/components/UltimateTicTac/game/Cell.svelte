@@ -1,14 +1,44 @@
 <script lang="ts">
-
-import wasmModule from '@wasm/ultimate_tic_tac';
+    //@ts-nocheck
+    import wasmModule from '@wasm/ultimate_tic_tac';
     import Circle from './Circle.svelte';
     import Cross from './Cross.svelte';
+    import stateStore from '@src/stores/UltimateTicTac/game_store';
+    import {cellContent} from '@src/utils/TicTac';
+
 
     let module = wasmModule.module;
 
-    export let cellState: number;
-    export let moveAllowed: boolean;
-    export let turn: number;
+    let state;
+
+    stateStore.subscribe(s=>{
+        state=s;
+    });
+
+
+    export let coords:{
+        br:number,bc:number
+        sr:number,sc:number
+    };
+
+    export let cellArr:number[];
+
+
+    let cellState = cellContent(
+        coords.br, coords.bc, 
+        coords.sr, coords.sc,
+        cellArr
+    );
+
+    let moveAllowed = (
+        cellState === module.CellState.CEmpty
+        &&((
+            state.force_board_row === coords.br
+            && state.force_board_col == coords.bc
+        )||(
+            !state.has_force_board
+        ))
+    );
 
 </script>
 
@@ -30,9 +60,9 @@ import wasmModule from '@wasm/ultimate_tic_tac';
             scale-0
             group-hover:scale-100
         ">
-            {#if turn === module.Player.PCircle}
+            {#if state.turn === module.Player.PCircle}
                 <Circle/>
-            {:else if cellState === module.Player.PCross}
+            {:else if state.turn === module.Player.PCross}
                 <Cross/>
             {/if}
         </div>

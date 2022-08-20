@@ -1,36 +1,30 @@
 <script lang="ts">
-
-
+    //@ts-nocheck
     import {range} from '@src/utils/base_utils';
     import wasmModule from '@wasm/ultimate_tic_tac';
     import Circle from './Circle.svelte';
     import Cross from './Cross.svelte';
     import Cell from './Cell.svelte';
+    import stateStore from '@src/stores/UltimateTicTac/game_store';
+    import {boardContent} from '@src/utils/TicTac';
+    
+
+    let state;
+    stateStore.subscribe(s=>{
+        state=s;
+    });
+
     let module = wasmModule.module;
     let range3 = range(3);
 
-    export let boardState: number;
-    export let cellContent: (r:number, c:number) => number;
-    export let isForceBoard: boolean;
-    export let boardMoveAllowed: boolean;
-    export let turn: number;
+    export let coords: {row:number, col: number};
+    export let boardArr: any;
+    export let cellArr: any;
 
-    console.log(`moveAllwed: ${boardMoveAllowed}`)
-
-    function isCircle(){
-        return boardState === module.BoardState.BCircle;
-    }
-
-    function isCross(){
-        return boardState === module.BoardState.BCross;
-    }
-
-    function moveAllwed(sr:number, sc:number):boolean {
-        return (
-            cellContent(sr, sc) === module.CellState.CEmpty
-            && (isForceBoard || boardMoveAllowed)
-        )
-    }
+    let isForceBoard = (
+        state.force_board_row == coords.row 
+        && state.force_board_col == coords.col
+    );
 
 </script>
 <div class="
@@ -44,14 +38,14 @@
     w-full h-full
 ">
 
-    {#if isCircle()}
+    {#if boardContent(coords.row, coords.col, boardArr) === module.BoardState.BCircle}
         <div class="
             w-full h-full
             bg-gray-700
         ">
             <Circle/>
         </div>
-    {:else if isCross()}
+    {:else if boardContent(coords.row, coords.col, boardArr) === module.BoardState.BCross}
         <div class="
             w-full h-full
             bg-gray-700
@@ -66,9 +60,12 @@
             ">
                 {#each range3 as sc}
                     <Cell
-                        cellState={cellContent(sr, sc)}
-                        moveAllowed={moveAllwed(sr, sc)}
-                        turn={turn}
+                        coords={{
+                            br:coords.row, bc:coords.col,
+                            sr:sr,sc:sc
+                        }}
+                        cellArr={cellArr}
+
                     />
                 {/each}
 
