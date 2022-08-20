@@ -2,15 +2,12 @@
     
     import Page from '@components/Page.svelte';
     import Board from './game/Board.svelte';
-    import stateStore from '@src/stores/UltimateTicTac/game_store';
-
     import wasmModule from '@wasm/ultimate_tic_tac';
+    import gameStore, {updateGame} from '@src/stores/UltimateTicTac/game_store';
+
     let game = wasmModule.module.Game.new();
 
-    let state = game.get_state();
-
-    stateStore.update(_=>state);
-
+    updateGame(game, wasmModule.memory.memory);
 
 </script>
 

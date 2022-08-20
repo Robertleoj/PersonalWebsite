@@ -8,18 +8,11 @@
     import stateStore from '@src/stores/UltimateTicTac/game_store';
     import {boardContent} from '@src/utils/TicTac';
     
-
-    let state;
-    stateStore.subscribe(s=>{
-        state=s;
-    });
-
     let module = wasmModule.module;
     let range3 = range(3);
 
     export let coords: {row:number, col: number};
-    export let boardArr: any;
-    export let cellArr: any;
+    let {boardArr, state} = $stateStore;
 
     let isForceBoard = (
         state.force_board_row == coords.row 
@@ -64,8 +57,6 @@
                             br:coords.row, bc:coords.col,
                             sr:sr,sc:sc
                         }}
-                        cellArr={cellArr}
-
                     />
                 {/each}
 

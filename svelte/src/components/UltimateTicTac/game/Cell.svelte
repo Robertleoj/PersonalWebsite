@@ -1,28 +1,18 @@
 <script lang="ts">
-    //@ts-nocheck
     import wasmModule from '@wasm/ultimate_tic_tac';
     import Circle from './Circle.svelte';
     import Cross from './Cross.svelte';
     import stateStore from '@src/stores/UltimateTicTac/game_store';
     import {cellContent} from '@src/utils/TicTac';
 
-
     let module = wasmModule.module;
-
-    let state;
-
-    stateStore.subscribe(s=>{
-        state=s;
-    });
-
 
     export let coords:{
         br:number,bc:number
         sr:number,sc:number
     };
 
-    export let cellArr:number[];
-
+    let {cellArr, state} = $stateStore;
 
     let cellState = cellContent(
         coords.br, coords.bc, 
@@ -60,9 +50,9 @@
             scale-0
             group-hover:scale-100
         ">
-            {#if state.turn === module.Player.PCircle}
+            {#if $stateStore.state.turn === module.Player.PCircle}
                 <Circle/>
-            {:else if state.turn === module.Player.PCross}
+            {:else if $stateStore.state.turn === module.Player.PCross}
                 <Cross/>
             {/if}
         </div>
