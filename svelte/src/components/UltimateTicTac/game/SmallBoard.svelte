@@ -9,21 +9,29 @@
     import {boardContent} from '@src/utils/TicTac';
     
     let module = wasmModule.module;
+
     let range3 = range(3);
 
     export let coords: {row:number, col: number};
-    let {boardArr, state} = $stateStore;
 
-    let isForceBoard = (
-        state.force_board_row == coords.row 
-        && state.force_board_col == coords.col
-    );
+    let force_board_row, force_board_col, isForceBoard, finished;
 
+    stateStore.subscribe(v=>{
+        ({force_board_row, force_board_col} = v.state);
+        finished = v.state.game_result !== module.GameResult.RUnfinished;
+
+        isForceBoard = (
+            force_board_row == coords.row 
+            && force_board_col == coords.col
+            && !finished
+        );
+    });
 </script>
+
 <div class="
     {isForceBoard?`
         border-green-500
-        border-6
+        border-4
     `:`
         border-pink-400
         border-4
@@ -31,14 +39,14 @@
     w-full h-full
 ">
 
-    {#if boardContent(coords.row, coords.col, boardArr) === module.BoardState.BCircle}
+    {#if boardContent(coords.row, coords.col, $stateStore.boardArr) === module.BoardState.BCircle}
         <div class="
             w-full h-full
             bg-gray-700
         ">
             <Circle/>
         </div>
-    {:else if boardContent(coords.row, coords.col, boardArr) === module.BoardState.BCross}
+    {:else if boardContent(coords.row, coords.col, $stateStore.boardArr) === module.BoardState.BCross}
         <div class="
             w-full h-full
             bg-gray-700

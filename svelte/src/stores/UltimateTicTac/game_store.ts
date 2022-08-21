@@ -28,7 +28,8 @@ const updateGame = (game:any, memory:any) =>{
 export default st;
 
 export {
-    updateGame
+    updateGame,
+    makeState
 }
 
 

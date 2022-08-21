@@ -21,7 +21,7 @@ pub enum Player {
     PCircle = 1
 }
 
-#[derive(Clone, Copy)]
+#[derive(Clone, Copy, PartialEq)]
 #[wasm_bindgen]
 #[repr(u8)]
 pub enum CellState {
@@ -30,7 +30,17 @@ pub enum CellState {
     CCircle = 2
 }
 
-#[derive(Clone, Copy)]
+#[derive(Clone, Copy, PartialEq)]
+#[wasm_bindgen]
+#[repr(u8)]
+pub enum GameResult {
+    RCross,
+    RCircle,
+    RDraw,
+    RUnfinished
+}
+
+#[derive(Clone, Copy, PartialEq)]
 #[wasm_bindgen]
 #[repr(u8)]
 pub enum BoardState {
@@ -48,14 +58,16 @@ pub struct Game{
 #[derive(Clone,Copy)]
 #[wasm_bindgen]
 pub struct BoardCoord {
-    row: u8,
-    col: u8
+    row: usize,
+    col: usize
 }
 
 #[wasm_bindgen]
 pub struct CellCoord {
-    row: u8,
-    col: u8
+    br: usize,
+    bc: usize,
+    sr: usize,
+    sc: usize
 }
 
 
@@ -65,11 +77,10 @@ pub struct APIState {
     pub cell_ptr: CellPtr,
     pub board_ptr: BoardPtr,
     pub has_force_board: bool,
-    pub force_board_row: u8,
-    pub force_board_col: u8,
+    pub force_board_row: usize,
+    pub force_board_col: usize,
     pub turn: Player,
-    pub is_terminal: bool,
-    pub winner: Option<Player>
+    pub game_result: GameResult
 }
 
 
@@ -86,15 +97,27 @@ impl Game {
     }
 
     pub fn get_state(&self) -> APIState {
+        let (
+            has_force_board,
+            force_board_row,
+            force_board_col
+        ) = match self.state.force_board {
+            None => {
+                (false, 4, 4)
+            },
+            Some(BoardCoord{row, col}) => {
+                (true, row, col)
+            }
+        };
+
         APIState { 
             cell_ptr: self.state.get_cell_ptr(), 
             board_ptr: self.state.get_board_ptr(), 
-            has_force_board: true,
-            force_board_row: 1,
-            force_board_col: 1,
+            has_force_board,
+            force_board_row,
+            force_board_col,
             turn: self.state.get_turn(), 
-            is_terminal: false, 
-            winner: None 
+            game_result: self.state.game_result,
         }
     }
 
@@ -103,6 +126,12 @@ impl Game {
             + bc as u16 * 9 
             + sr as u16 * 3 
             + sc as u16
+    }
+
+    pub fn make_move(&mut self,
+        br: usize, bc: usize, sr: usize, sc: usize
+    ){
+        self.state.make_move(CellCoord { br, bc, sr, sc });
     }
 
 }
