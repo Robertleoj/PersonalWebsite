@@ -31,11 +31,10 @@
 <div class="
     {isForceBoard?`
         border-green-500
-        border-4
     `:`
         border-pink-400
-        border-4
     `} 
+    md:border-4 border-2
     w-full h-full
 ">
 

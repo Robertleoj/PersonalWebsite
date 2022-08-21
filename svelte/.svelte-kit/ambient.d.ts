@@ -21,7 +21,6 @@ declare module '$env/static/private' {
 	export const OLDPWD: string;
 	export const TERM_PROGRAM_VERSION: string;
 	export const DESKTOP_SESSION: string;
-	export const NVM_NODEJS_ORG_MIRROR: string;
 	export const npm_package_json: string;
 	export const APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL: string;
 	export const GNOME_SHELL_SESSION_MODE: string;
@@ -33,7 +32,8 @@ declare module '$env/static/private' {
 	export const npm_config_userconfig: string;
 	export const npm_config_local_prefix: string;
 	export const SYSTEMD_EXEC_PID: string;
-	export const IM_CONFIG_CHECK_ENV: string;
+	export const VISUAL: string;
+	export const CHROME_EXECUTABLE: string;
 	export const DBUS_SESSION_BUS_ADDRESS: string;
 	export const npm_config_engine_strict: string;
 	export const COLORTERM: string;
@@ -41,17 +41,18 @@ declare module '$env/static/private' {
 	export const COLOR: string;
 	export const NVM_DIR: string;
 	export const npm_config_metrics_registry: string;
-	export const IM_CONFIG_PHASE: string;
-	export const WAYLAND_DISPLAY: string;
+	export const MANDATORY_PATH: string;
 	export const LOGNAME: string;
 	export const JOURNAL_STREAM: string;
 	export const _: string;
 	export const npm_config_prefix: string;
 	export const XDG_SESSION_CLASS: string;
+	export const DEFAULTS_PATH: string;
 	export const USERNAME: string;
 	export const TERM: string;
 	export const npm_config_cache: string;
 	export const GNOME_DESKTOP_SESSION_ID: string;
+	export const WINDOWPATH: string;
 	export const npm_config_node_gyp: string;
 	export const PATH: string;
 	export const SESSION_MANAGER: string;
@@ -60,7 +61,6 @@ declare module '$env/static/private' {
 	export const npm_package_name: string;
 	export const XDG_MENU_PREFIX: string;
 	export const LC_ADDRESS: string;
-	export const GNOME_SETUP_DISPLAY: string;
 	export const XDG_RUNTIME_DIR: string;
 	export const GDK_BACKEND: string;
 	export const DISPLAY: string;
@@ -85,17 +85,16 @@ declare module '$env/static/private' {
 	export const npm_package_version: string;
 	export const npm_lifecycle_event: string;
 	export const QT_ACCESSIBILITY: string;
-	export const NO_AT_BRIDGE: string;
 	export const GDMSESSION: string;
 	export const LESSCLOSE: string;
 	export const LC_MEASUREMENT: string;
+	export const GPG_AGENT_INFO: string;
 	export const LC_IDENTIFICATION: string;
 	export const VSCODE_GIT_ASKPASS_EXTRA_ARGS: string;
 	export const QT_IM_MODULE: string;
 	export const npm_config_globalconfig: string;
 	export const npm_config_init_module: string;
 	export const PWD: string;
-	export const npm_config_globalignorefile: string;
 	export const npm_execpath: string;
 	export const XDG_CONFIG_DIRS: string;
 	export const XDG_DATA_DIRS: string;
@@ -105,6 +104,6 @@ declare module '$env/static/private' {
 	export const npm_command: string;
 	export const LC_PAPER: string;
 	export const VTE_VERSION: string;
-	export const INIT_CWD: string;
 	export const EDITOR: string;
+	export const INIT_CWD: string;
 }

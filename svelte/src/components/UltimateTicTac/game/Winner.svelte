@@ -26,7 +26,7 @@
 
 <div class="
     w-full text-black text-center
-    py-10
+    md:py-10 sm:py-4
     {winner==='unfinished'?'invisible':''}
 ">
     <h1 class='text-4xl'>

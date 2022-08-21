@@ -17,13 +17,13 @@
 
 <div class="
     px-5 pb-20
-    w-full h-full
+    w-full 
 ">
     <div class="
         aspect-square
         mx-auto
-        max-h-[800px]
-        border-8
+        max-h-[700px]
+        md:border-8 border-4
         {noForce?'border-green-500':'border-pink-400'}
     ">
 
